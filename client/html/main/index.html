@@ -1,0 +1,199 @@
+<!-- <!DOCTYPE html> --> <!-- Comment for Meteor -->
+<!-- <html> --> <!-- Comment for Meteor -->
+  <head>
+    <title> Lungo Gallery </title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- <link rel="stylesheet" href="style/css/1-lungo-2.1.0.css"> --> <!-- Comment for Meteor -->
+    <!-- <link rel="stylesheet" href="style/css/2-lungo.icon-2.1.0.css"> --> <!-- Comment for Meteor -->
+    <!-- <link rel="stylesheet" href="style/css/3-lungo.icon.brand-2.1.0.css"> --> <!-- Comment for Meteor -->
+    <!-- <link rel="stylesheet" href="style/css/4-theme.lungo-2.1.0.css"> --> <!-- Comment for Meteor -->
+    <!-- <script type="text/javascript" src="lib/js/1-quo-2.3.3.js"></script> --> <!-- Comment for Meteor -->
+    <!-- <script type="text/javascript" src="lib/js/2-lungo-2.1.0.js"></script> --> <!-- Comment for Meteor -->
+    <!-- <script defer type="text/javascript" src="lib/js/3-app.js"></script> --> <!-- Comment for Meteor -->
+  </head>
+  <body>  
+    <section id="main-section" data-transition="slide">
+      <header class="extended">
+        <nav>
+          <a href="#menu" data-router="aside">
+            <span class="icon menu"></span>
+          </a>
+          <div class="title centered">
+            Lungo Gallery
+          </div>
+          <a href="#add-app-section" data-router="section" data-icon="pencil" class="right"></a>
+          <a href="#inbox-section" data-router="section" class="right">
+            <span class="icon mail"></span>
+            <span class="tag count"> 2 </span>
+          </a>
+        </nav>
+      </header>
+      <nav class="groupbar with-labels">
+        <a href="#latest-apps" data-router="article" data-label="Latest apps" data-count="2" class="active"></a>
+        <a href="#best-apps" data-router="article" data-label="Best apps" data-count="1"></a>
+        <a href="#popular-apps" data-router="article" data-label="Popular apps" data-count="3"></a>
+      </nav>
+      <article id="latest-apps" class="scroll active">
+        <div class="indented">
+          <div>
+            <a class="button anchor icon check"> Mark all as seen </a>
+          </div>
+        </div>
+        <div class="list indented">
+          <ul>
+            <li data-image="http://lorempixel.com/200/200/abstract/" class="thumb selectable">
+              <a href="#app-section" data-router="section">
+                <span class="right tag">abstract</span>
+                <strong>App 1</strong>
+                <small>by: author_1</small>
+                <div class="right">
+                    <span data-icon="clock"></span>
+                    <span class="tag secondary">07/02/2013 11:34</span>
+                </div>
+              </a>
+            </li>
+            <li data-image="http://lorempixel.com/200/200/food/" class="thumb selectable">
+              <a href="#">
+                <span class="right tag">food</span>
+                <strong>App 2</strong>
+                <small>by: author_2</small>
+                <div class="right">
+                  <span data-icon="clock"></span>
+                  <span class="tag secondary">07/02/2013 10:34</span>
+                </div>
+              </a>
+            </li>
+            <li data-image="http://lorempixel.com/200/200/people/" class="light thumb selectable">
+              <a href="#">
+                <span class="right tag">people</span>
+                <strong>App 3</strong>
+                <small>by: author_3</small>
+                <div class="right">
+                  <span data-icon="clock"></span>
+                  <span class="tag secondary">07/02/2013 09:13</span>
+                </div>
+              </a>
+            </li>
+            <li data-image="http://lorempixel.com/200/200/technics/" class="light thumb selectable">
+              <a href="#">
+                <span class="right tag">tech</span>
+                <strong>App 4</strong>
+                <small>by: author_4</small>
+                <div class="right">
+                  <span data-icon="clock"></span>
+                  <span class="tag secondary">07/02/2013 08:23</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article id="best-apps" class="scroll">
+        <div class="indented">
+          <div>
+            <a class="button anchor icon check"> Mark all as seen </a>
+          </div>
+        </div>
+        <div class="list indented">
+          <ul>
+            <li data-image="http://lorempixel.com/200/200/animals/" class="thumb selectable">
+              <a href="#">
+                <span class="right tag">animals</span>
+                <strong>App 5</strong>
+                <small>by: author_5</small>
+                <div class="right">
+                  <span data-icon="thumbs-up"></span>
+                  <span class="tag accept">25</span>
+                </div>
+              </a>
+            </li>
+            <li data-image="http://lorempixel.com/200/200/nightlife/" class="light thumb selectable">
+              <a href="#">
+                <span class="right tag">nightlife</span>
+                <strong>App 6</strong>
+                <small>by: author_6</small>
+                <div class="right">
+                  <span data-icon="thumbs-up"></span>
+                  <span class="tag accept">23</span>
+                </div>
+              </a>
+            </li>
+            <li data-image="http://lorempixel.com/200/200/nature/" class="light thumb selectable">
+              <a href="#">
+                <span class="right tag">nature</span>
+                <strong>App 7</strong>
+                <small>by: author_7</small>
+                <div class="right">
+                  <span data-icon="thumbs-up"></span>
+                  <span class="tag accept">20</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article id="popular-apps" class="scroll">
+        <div class="indented">
+          <div>
+            <a class="button anchor icon check"> Mark all as seen </a>
+          </div>
+        </div>
+        <div class="list indented">
+          <ul>
+            <li data-image="http://lorempixel.com/200/200/transport/" class="thumb selectable">
+              <a href="#">
+                <span class="right tag">transport</span>
+                <strong>App 8</strong>
+                <small>by: author_8</small>
+                <div class="right">
+                  <span data-icon="mail"></span>
+                  <span class="tag secondary">7</span>
+                </div>
+              </a>
+            </li>
+              <li data-image="http://lorempixel.com/200/200/city/" class="thumb selectable">
+                <a href="#">
+                  <span class="right tag">city</span>
+                  <strong>App 9</strong>
+                  <small>by: author_9</small>
+                  <div class="right">
+                    <span data-icon="mail"></span>
+                    <span class="tag secondary">5</span>
+                  </div>
+                </a>
+              </li>
+              <li data-image="http://lorempixel.com/200/200/fashion/" class="thumb selectable">
+                <a href="#">
+                  <span class="right tag">fashion</span>
+                  <strong>App 10</strong>
+                  <small>by: author_10</small>
+                  <div class="right">
+                    <span data-icon="mail"></span>
+                    <span class="tag secondary">4</span>
+                  </div>
+                </a>
+              </li>
+              <li data-image="http://lorempixel.com/200/200/technics/" class="light thumb light selectable">
+                <a href="#">
+                  <span class="right tag">tech</span>
+                  <strong>App 11</strong>
+                  <small>by: author_11</small>
+                  <div class="right">
+                    <span data-icon="mail"></span>
+                    <span class="tag secondary">3</span>
+                  </div>
+                </a>
+              </li>
+          </ul>
+        </div>
+      </article>
+      <footer>
+        <nav>
+          <a href="#latest-apps" data-router="article" data-icon="clock"  data-count="2" class="active"></a>
+          <a href="#best-apps" data-router="article" data-icon="heart-full" data-count="1"></a>
+          <a href="#popular-apps" data-router="article" data-icon="star" data-count="3"></a>
+        </nav>
+      </footer>
+    </section>
+  </body>
+<!-- </html> --> <!-- Comment for Meteor -->

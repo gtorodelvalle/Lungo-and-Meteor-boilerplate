@@ -1,0 +1,132 @@
+  <body>
+    <section id="app-section" data-transition="slide">
+      <header class="extended">
+        <nav>
+          <a href="#back" data-router="section" data-icon="left"></a>
+        </nav>
+        <span class="title centered icon mobile"> App name </span>
+      </header>
+      <nav class="groupbar">
+        <a href="#app-info" data-router="article" class="active">
+          <abbr> General Info </abbr>
+        </a>
+        <a href="#app-comments" data-router="article">
+          <abbr> Coments</abbr>
+          <span class="tag count"> 2 </span>
+        </a>
+      </nav>
+      <article id="app-info" class="active scroll">
+        <div class="indented">
+          <div class="button small">
+            <span class="icon inbox"></span>
+            <span> Subscribe </span>
+          </div>
+          <div class="button small" style="float: right;">
+            <span class="icon thumbs-up"></span>
+            <span> Like </span>
+          </div>
+        </div>
+        <form>
+          <span data-progress="0%"></span>
+          <fieldset>
+            <label for="app-name">Name: </label>
+            <input id="app-name" name="app-name" type="text" placeholder="Name of the app...">
+          </fieldset>
+          <fieldset>
+            <label for="app-author">Author: </label>
+            <input id="app-author" name="app-author" type="text" placeholder="Author of the app...">
+          </fieldset>
+          <fieldset>
+            <label for="app-category">Category:</label>
+            <label id="app-category" name="app-category" class="select">
+              <select>
+                <option value="1">None</option>
+                <option value="2">Second category</option>
+                <option value="3">Third category</option>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset>
+            <label for="app-description"> Description:</label>
+            <textarea id="app-description" name="app-description" placeholder="Description of the app..."></textarea>
+          </fieldset>
+          <fieldset data-icon="plus">
+            <label for="app-url">URL:</label>
+            <input id="app-url" name="app-url" type="text" placeholder="http://url-of-the-app">
+          </fieldset>
+          <fieldset>
+            <label for="app-screenshot">Screenshot:</label>
+            <img id="app-screenshot" name="app-screenshot" src="http://lorempixel.com/200/200"></img>
+          </fieldset>
+        </form>
+      </article>
+      <article id="app-comments" class="scroll indented">
+        <div>
+          <a class="button anchor icon check"> Mark all as read </a>
+        </div>
+        <div class="list">
+          <ul>
+            <li data-icon="user" class="thumb selectable">
+              <a href="#">
+                <span class="right tag">sports</span>
+                <strong>"This is a comment."</strong>
+                <small>by user_12</small>
+                <div class="right">
+                  <span data-icon="clock"></span>
+                  <span class="tag secondary">07/02/2013 15:34</span>
+                </div>
+              </a>
+            </li>
+              <li data-icon="user" class="thumb selectable">
+                <a href="#">
+                  <span class="right tag">fashion</span>
+                  <strong>"This is another comment."</strong>
+                  <small>by user_13</small>
+                  <div class="right">
+                    <span data-icon="clock"></span>
+                    <span class="tag secondary">07/02/2013 14:32</span>
+                  </div>
+                </a>
+              </li>
+              <li data-icon="user" class="light thumb selectable">
+                <a href="#">
+                  <span class="right tag">sports</span>
+                  <strong>"This is a even another comment."</strong>
+                  <small>by user_14</small>
+                  <div class="right">
+                    <span data-icon="clock"></span>
+                    <span class="tag secondary">07/02/2013 13:11</span>
+                  </div>
+                </a>
+              </li>
+              <li data-icon="user" class="light thumb selectable">
+                <a href="#">
+                  <span class="right tag">city</span>
+                  <strong>"This is a one other comment."</strong>
+                  <small>by user_15</small>
+                  <div class="right">
+                    <span data-icon="clock"></span>
+                    <span class="tag secondary">07/02/2013 12:08</span>
+                  </div>
+                </a>
+              </li>
+          </ul>
+        </div>
+        <form>
+          <fieldset>
+            <textarea id="new-comment" placeholder="Type your comment..."></textarea>
+          </fieldset>
+          <a class="button anchor icon mail"> Comment </a>
+        </form>
+      </article>
+      <footer>
+        <nav>
+          <a href="#app-info" data-router="article" data-icon="info" class="active"></a>
+          <a href="#app-comments" data-router="article">
+            <span class="icon mail"></span>
+            <span class="tag count"> 2 </span>
+          </a>
+        </nav>
+      </footer>
+    </section>
+  </body>

@@ -1,9 +1,10 @@
 Meteor.startup(function() { // Uncomment for Meteor.
     Lungo.init({
         data: 'Lungo Gallery app',
-        version: '2.0',
-        resources: []
-    });
+        version: '2.1',
+        resources: [] /* Not used, we use Meteor's HTML code loading mechanism
+                          instead: http://docs.meteor.com/#structuringyourapp*/    
+      });
 }); // Uncomment for Meteor.
 
 $$('#latest-apps li').swipeLeft(function (ev) {
