@@ -7,12 +7,13 @@ Meteor.startup(function() {
                         instead: http://docs.meteor.com/#structuringyourapp*/
     });
     Lungo.dom('#send-action').tap(function(ev) {
-      var messageText = Lungo.dom('#messageText').val();
-      if(messageText) {
+      var messageText = Lungo.dom('#messageText');
+      if(messageText.val()) {
         messageCollection.insert({
-          text: messageText,
+          text: messageText.val(),
           timeStamp: Date.now()
         });
+        messageText.val('');
       }
     })
   });
