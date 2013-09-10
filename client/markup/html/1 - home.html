@@ -1,0 +1,44 @@
+  <head>
+    <title> My app </title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="Germán Toro del Valle (@gtorodelvalle)">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+  </head>
+  <body>
+    <section id="home" data-transition="slide">
+      <header data-title="Home">
+        <nav>
+          <button class="on-right" data-icon="arrow-right" data-view-section="section_1"></button>
+        </nav>
+      </header>
+      <article id="home_1" class="active indented">
+        <div class="form">
+          <fieldset>
+            <label for="messageText"> Message: </label>
+            <input id="messageText" type="text" placeholder="Insert some text...">
+          </fieldset>
+          <button id="send-action" class="anchor"> Send message </button>
+        </div>
+        {{> messages }}
+      </article>
+    </section>
+  </body>
+  
+  <template name="messages">
+    <div class="list">
+      <ol>
+        <li class="anchor contrast"> {{ messageCount }} messages sent </li>
+        {{#each message}}
+          <li> {{ text }} </li>
+        {{/each}}
+      </ol>
+    </div>
+  </template>
+  
